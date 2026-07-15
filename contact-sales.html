@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Sales | DPI</title>
+<style>
+  :root{
+    --navy:#0B1F4D; --blue:#1E4FD8; --blue-dark:#153BAA;
+    --blue-light:#EAF0FF; --blue-tint:#F5F8FF;
+    --gray-700:#48536A; --gray-500:#7B8698; --gray-200:#E4E9F2; --white:#FFFFFF;
+    --green:#16A34A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--navy);background:var(--white);}
+  a{text-decoration:none;color:inherit;}
+  header.site-header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 48px;border-bottom:1px solid var(--gray-200);
+  }
+  .logo{font-weight:800;font-size:19px;letter-spacing:-0.3px;color:var(--blue);display:flex;align-items:center;gap:8px;white-space:nowrap;}
+  .logo::before{content:"";width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--blue),var(--navy));display:inline-block;}
+  .back-link{font-size:13.5px;color:var(--gray-500);font-weight:500;display:flex;align-items:center;gap:6px;}
+  .back-link:hover{color:var(--blue);}
+
+  .wrap{
+    max-width:960px;margin:0 auto;padding:56px 24px 80px;
+    display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:flex-start;
+  }
+  .pitch{padding-top:12px;}
+  .pitch .badge{
+    display:inline-block;background:var(--blue-light);color:var(--blue);font-size:12px;
+    font-weight:700;letter-spacing:0.5px;padding:5px 12px;border-radius:5px;margin-bottom:18px;
+  }
+  .pitch h1{font-size:32px;font-weight:800;line-height:1.2;margin-bottom:16px;}
+  .pitch p{font-size:15px;color:var(--gray-700);line-height:1.65;margin-bottom:28px;}
+  .contact-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}
+  .contact-item .icon{
+    width:36px;height:36px;border-radius:9px;background:var(--blue-light);flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .contact-item .icon svg{width:17px;height:17px;color:var(--blue);}
+  .contact-item h4{font-size:14px;font-weight:700;margin-bottom:3px;}
+  .contact-item p{font-size:13.5px;color:var(--gray-500);margin:0;}
+
+  form{
+    background:var(--blue-tint);border:1px solid var(--gray-200);border-radius:16px;padding:36px;
+  }
+  form h2{font-size:20px;font-weight:800;margin-bottom:6px;}
+  form > p.sub{font-size:13.5px;color:var(--gray-500);margin-bottom:24px;}
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-size:13px;font-weight:600;margin-bottom:7px;color:var(--navy);}
+  .field input, .field textarea{
+    width:100%;padding:11px 14px;border:1px solid var(--gray-200);border-radius:8px;
+    font-size:14.5px;font-family:inherit;background:#fff;color:var(--navy);resize:vertical;
+  }
+  .field input:focus, .field textarea:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue);}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  button.submit{
+    width:100%;padding:13px;border:none;border-radius:8px;background:var(--blue);
+    color:#fff;font-weight:700;font-size:15px;cursor:pointer;margin-top:6px;transition:background .15s ease;
+  }
+  button.submit:hover{background:var(--blue-dark);}
+
+  .success{display:none;text-align:center;padding:20px 0;}
+  .success.show{display:block;}
+  form.hide{display:none;}
+  .success .check{
+    width:56px;height:56px;border-radius:50%;background:var(--green);margin:0 auto 18px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .success .check svg{width:26px;height:26px;color:#fff;}
+  .success h2{font-size:20px;font-weight:800;margin-bottom:10px;}
+  .success p{font-size:14px;color:var(--gray-700);margin-bottom:22px;}
+  .success a.btn{
+    display:inline-block;padding:11px 22px;border-radius:8px;background:var(--blue);
+    color:#fff;font-weight:600;font-size:14px;
+  }
+
+  @media (max-width:800px){
+    .wrap{grid-template-columns:1fr;padding-top:32px;}
+    header.site-header{padding:14px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">7Generation</div>
+  <a href="case-study-gated.html" class="back-link">&larr; Back to case study</a>
+</header>
+
+<div class="wrap">
+  <div class="pitch">
+    <span class="badge">TALK TO SALES</span>
+    <h1>Let's talk about your deployment.</h1>
+    <p>Tell us about your agency or organization and one of our specialists will walk you through implementation details, architecture, and pricing.</p>
+
+    <div class="contact-item">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></div>
+      <div><h4>Call us</h4><p>+1 (800) 555-0142</p></div>
+    </div>
+    <div class="contact-item">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+      <div><h4>Email us</h4><p>sales@dpi.example.com</p></div>
+    </div>
+  </div>
+
+  <div>
+    <form id="contactForm">
+      <h2>Contact Sales</h2>
+      <p class="sub">We typically respond within one business day.</p>
+
+      <div class="row2">
+        <div class="field">
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" required placeholder="Jane">
+        </div>
+        <div class="field">
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" required placeholder="Doe">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Work email</label>
+        <input type="email" id="email" required placeholder="jane@agency.gov">
+      </div>
+
+      <div class="field">
+        <label for="org">Organization</label>
+        <input type="text" id="org" required placeholder="Ministry of Communications">
+      </div>
+
+      <div class="field">
+        <label for="message">How can we help?</label>
+        <textarea id="message" rows="4" placeholder="Tell us about your use case..."></textarea>
+      </div>
+
+      <button type="submit" class="submit">Send Message</button>
+    </form>
+
+    <div class="success" id="successMsg">
+      <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div>
+      <h2>Message sent</h2>
+      <p>Thanks for reaching out. A DPI specialist will contact you shortly.</p>
+      <a href="case-study-gated.html" class="btn">Back to case study</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    this.classList.add('hide');
+    document.getElementById('successMsg').classList.add('show');
+  });
+</script>
+
+</body>
+</html>
